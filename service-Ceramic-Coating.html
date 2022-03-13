@@ -1,13 +1,17 @@
 
 
 
+
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Auto Detailing in Dallas,  TX 75228 | L&#x27;Finesse Auto/Boat Details |  Service | service-Ceramic-Coating </title>
+        <title>Auto Detailing in Dallas, TX | L&#x27;Finesse Auto/Boat Details |  Service | Ceramic Coating</title>
+        <meta name="description" content="Our Ceramic Coating service offers a high-quality and long-lasting protective coating for your car or boat&#x27;s paint job.">
         <!-- <title>ProPhone Templates</title> -->
         <!-- TailwindCSS  -->
         <!-- <link rel="stylesheet" type="text/css" href="/staticfiles/landing_page_gen/tailwind.css"> -->
@@ -18,7 +22,7 @@
            
 
         
-        <link href="https://prophone.herokuapp.com/staticfiles/landing_page_gen/output.css" rel="stylesheet">
+        <link defer href="https://prophone.herokuapp.com/staticfiles/landing_page_gen/output.css" rel="stylesheet">
         <!-- Include Scripts -->
         <!-- Header Component, only used for presentation -->
 
@@ -34,7 +38,7 @@
 <script defer src="https://unpkg.com/alpinejs@3.7.0/dist/cdn.min.js"></script>
 <!-- Focus Visible Polyfill -->
 <script defer src="https://unpkg.com/focus-visible@5.2.0/dist/focus-visible.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
         <!-- <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script> -->
         <style>
@@ -58,7 +62,7 @@
                 --color-primary-foreground: hsl(0, 0%, var(--switch));
             }
         </style>
-                <script type="text/javascript">
+                <script type="text/javascript" defer>
                     function send_sms(slug){
                         console.log('send_sms', slug)
                         // var sender_fname = $(`#${form_num}-first-name`).val()
@@ -92,8 +96,7 @@
                         var sender_services = ""
         
                         console.log("text", slug, sender_fname, sender_lname, sender_number, sender_message)
-                        // return ' bucks'
-                        // fetch('http://127.0.0.1:8000/sms/' + slug , {
+
                         fetch('https://prophone.herokuapp.com/sms/' + slug , {
                             method: 'POST',
                             body: JSON.stringify({
@@ -425,19 +428,8 @@
                                         <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                                             <div class="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
                                                 <!-- Render each sublink -->
-                                                <!-- <each loop="link in [{&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Auto Exteriors&#x27;, &#x27;href&#x27;: &#x27;gallery-Auto-Exteriors&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Auto Interiors&#x27;, &#x27;href&#x27;: &#x27;gallery-Auto-Interiors&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Boat Exteriors&#x27;, &#x27;href&#x27;: &#x27;gallery-Boat-Exteriors&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Boat Interiors&#x27;, &#x27;href&#x27;: &#x27;gallery-Boat-Interiors&#x27;}, {&#x27;title&#x27;: &#x27;All Photos&#x27;, &#x27;copy&#x27;: &#x27;All Photos&#x27;, &#x27;href&#x27;: &#x27;gallery-All&#x27;}]"> -->
+                                                <!-- <each loop="link in [{&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Auto Interiors&#x27;, &#x27;href&#x27;: &#x27;gallery-Auto-Interiors&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Boat Exteriors&#x27;, &#x27;href&#x27;: &#x27;gallery-Boat-Exteriors&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Auto Exteriors&#x27;, &#x27;href&#x27;: &#x27;gallery-Auto-Exteriors&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Boat Interiors&#x27;, &#x27;href&#x27;: &#x27;gallery-Boat-Interiors&#x27;}, {&#x27;title&#x27;: &#x27;All Photos&#x27;, &#x27;copy&#x27;: &#x27;All Photos&#x27;, &#x27;href&#x27;: &#x27;gallery-All&#x27;}]"> -->
                                                   
-                                                    <a
-                                                        href=" gallery-Auto-Exteriors "
-                                                        role="menuitem"
-                                                        class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
-                                                    >
-                                                        <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
-                                                        <p class="mt-1 text-sm text-gray-500">Auto Exteriors</p>
-                                                    </a>
-                                                <!-- </each> -->
-                                               <!--  -->
-                                                 
                                                     <a
                                                         href=" gallery-Auto-Interiors "
                                                         role="menuitem"
@@ -456,6 +448,17 @@
                                                     >
                                                         <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
                                                         <p class="mt-1 text-sm text-gray-500">Boat Exteriors</p>
+                                                    </a>
+                                                <!-- </each> -->
+                                               <!--  -->
+                                                 
+                                                    <a
+                                                        href=" gallery-Auto-Exteriors "
+                                                        role="menuitem"
+                                                        class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
+                                                    >
+                                                        <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
+                                                        <p class="mt-1 text-sm text-gray-500">Auto Exteriors</p>
                                                     </a>
                                                 <!-- </each> -->
                                                <!--  -->
@@ -746,12 +749,6 @@
                                         <div class="relative grid gap-6 px-5 py-2 bg-white rounded-lg">
                                             <!-- Render each sublink -->
                                             
-                                                <a href="gallery-Auto-Exteriors" role="menuitem" class="block p-3 -m-3 transition rounded-md">
-                                                    <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
-                                                    <p class="mt-1 text-sm text-gray-500">Auto Exteriors</p>
-                                                </a>
-                                            <!-- </each> -->
-                                            
                                                 <a href="gallery-Auto-Interiors" role="menuitem" class="block p-3 -m-3 transition rounded-md">
                                                     <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
                                                     <p class="mt-1 text-sm text-gray-500">Auto Interiors</p>
@@ -761,6 +758,12 @@
                                                 <a href="gallery-Boat-Exteriors" role="menuitem" class="block p-3 -m-3 transition rounded-md">
                                                     <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
                                                     <p class="mt-1 text-sm text-gray-500">Boat Exteriors</p>
+                                                </a>
+                                            <!-- </each> -->
+                                            
+                                                <a href="gallery-Auto-Exteriors" role="menuitem" class="block p-3 -m-3 transition rounded-md">
+                                                    <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
+                                                    <p class="mt-1 text-sm text-gray-500">Auto Exteriors</p>
                                                 </a>
                                             <!-- </each> -->
                                             
@@ -989,7 +992,7 @@
                                             <!-- <img class="object-cover" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/a354f74d-e41c-45ec-9e21-af0e3d4e021d.jpeg" alt="" /> -->
                                             <img class="object-cover" 
                                                 src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/a354f74d-e41c-45ec-9e21-af0e3d4e021d.jpeg" 
-                                                alt="" 
+                                                alt="Ceramic Coating for L&#x27;Finesse Auto/Boat Details in Dallas, TX"
                                                 style="
                                                     max-width: 960px;
                                                     height: auto;
@@ -1014,7 +1017,7 @@
                                             <!-- <img class="object-cover" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/af9041b5-c464-4b83-9f15-e156398225f8.jpeg" alt="" /> -->
                                             <img class="object-cover" 
                                                 src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/af9041b5-c464-4b83-9f15-e156398225f8.jpeg" 
-                                                alt="" 
+                                                alt="Ceramic Coating for L&#x27;Finesse Auto/Boat Details in Dallas, TX"
                                                 style="
                                                     max-width: 960px;
                                                     height: auto;
@@ -1039,7 +1042,7 @@
                                             <!-- <img class="object-cover" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/e81ae140-418f-43f4-8a04-816e3ff6277a.jpeg" alt="" /> -->
                                             <img class="object-cover" 
                                                 src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/e81ae140-418f-43f4-8a04-816e3ff6277a.jpeg" 
-                                                alt="" 
+                                                alt="Ceramic Coating for L&#x27;Finesse Auto/Boat Details in Dallas, TX"
                                                 style="
                                                     max-width: 960px;
                                                     height: auto;
@@ -1064,7 +1067,7 @@
                                             <!-- <img class="object-cover" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/e2c385cd-5a6c-4385-8159-55e6d147046a.jpeg" alt="" /> -->
                                             <img class="object-cover" 
                                                 src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/e2c385cd-5a6c-4385-8159-55e6d147046a.jpeg" 
-                                                alt="" 
+                                                alt="Ceramic Coating for L&#x27;Finesse Auto/Boat Details in Dallas, TX"
                                                 style="
                                                     max-width: 960px;
                                                     height: auto;
@@ -3281,7 +3284,7 @@ the blue gell-coat was VERY sun-damaged (faded), decals bad condition.  They cam
                 <!-- Your map here -->
                 <div class="w-full h-full bg-gray-400">
                     <div style="height:500px; width:100%;" id="map"></div>
-                    <script >
+                    <script defer>
                         async function coordinate(url) {
                             const res = await fetch(url)
                             const coordinates = await res.json()
@@ -3339,6 +3342,7 @@ the blue gell-coat was VERY sun-damaged (faded), decals bad condition.  They cam
                     </script>
                     <script
                     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSw3qRocbSgfTrtxZbCsTjSHZaaJuUXF4&callback=initMap&libraries=&v=weekly"
+                    defer
                     async
                   ></script> 
               
@@ -3427,7 +3431,7 @@ the blue gell-coat was VERY sun-damaged (faded), decals bad condition.  They cam
               <div class="flex space-x-6">
                   <!-- are these conditional? and linked to corret links? -->
                   
-                  <a target="_blank" rel="noopener noreferrer" href="//facebook.com/lfinesseautocare" class="text-gray-100 hover:text-gray-300 focus:outline-none focus:ring-2 ring-white ring-opacity-75">
+                  <a target="_blank" rel="noopener noreferrer" href="https://facebook.com/lfinesseautocare" class="text-gray-100 hover:text-gray-300 focus:outline-none focus:ring-2 ring-white ring-opacity-75">
                       <span class="sr-only">Facebook</span>
                       <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                           <path
@@ -3453,7 +3457,7 @@ the blue gell-coat was VERY sun-damaged (faded), decals bad condition.  They cam
                   
                   
                   
-                  <a target="_blank" rel="noopener noreferrer" href="//goo.gl/maps/dypnnnds58s4fgrda" class="text-gray-100 hover:text-gray-300 focus:outline-none focus:ring-2 ring-white ring-opacity-75">
+                  <a target="_blank" rel="noopener noreferrer" href="https://goo.gl/maps/dypnnnds58s4fgrda" class="text-gray-100 hover:text-gray-300 focus:outline-none focus:ring-2 ring-white ring-opacity-75">
                       <span class="sr-only">Google</span>
                       <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                           <path d="M20 10.2222C20 9.40001 19.9319 8.80001 19.7846 8.1778H10.2041V11.8889H15.8276C15.7143 12.8111 15.1021 14.2 13.7415 15.1333L13.7224 15.2575L16.7516 17.5573L16.9615 17.5778C18.8889 15.8333 20 13.2667 20 10.2222Z" fill="#9CA3AF"/>
@@ -3510,6 +3514,13 @@ the blue gell-coat was VERY sun-damaged (faded), decals bad condition.  They cam
                           
                           
                           
+                          <li>
+                              <a
+                                  href='sitemap.xml'
+                                  class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-opacity-75"
+                                  >Sitemap</a
+                              >
+                          </li>
                       </ul>
                   </div>
                   <!-- Services Links -->
@@ -3807,42 +3818,42 @@ the blue gell-coat was VERY sun-damaged (faded), decals bad condition.  They cam
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-146812"
-                                            name="146812"
+                                            id="contact-service-149517"
+                                            name="149517"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-146812" class="ml-3 text-sm font-medium text-gray-700">Paint Correction</label>
+                                        <label for="contact-label-service-149517" class="ml-3 text-sm font-medium text-gray-700">Paint Correction</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-146813"
-                                            name="146813"
+                                            id="contact-service-149518"
+                                            name="149518"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-146813" class="ml-3 text-sm font-medium text-gray-700">Ceramic Coating</label>
+                                        <label for="contact-label-service-149518" class="ml-3 text-sm font-medium text-gray-700">Ceramic Coating</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-146814"
-                                            name="146814"
+                                            id="contact-service-149519"
+                                            name="149519"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-146814" class="ml-3 text-sm font-medium text-gray-700">Auto Detailing</label>
+                                        <label for="contact-label-service-149519" class="ml-3 text-sm font-medium text-gray-700">Auto Detailing</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-146815"
-                                            name="146815"
+                                            id="contact-service-149520"
+                                            name="149520"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-146815" class="ml-3 text-sm font-medium text-gray-700">Boat Detailing</label>
+                                        <label for="contact-label-service-149520" class="ml-3 text-sm font-medium text-gray-700">Boat Detailing</label>
                                     </div>
                                 
                             </div>
@@ -3932,7 +3943,7 @@ the blue gell-coat was VERY sun-damaged (faded), decals bad condition.  They cam
                             </p>
                         </div> -->
                         <div
-                        onclick= "send_sms('L&#x27;Finesse-Auto-Boat-Details')" 
+                        onclick= "send_sms('L*$!Finesse-Auto-Boat-Details')" 
                             class="
                                 inline-flex
                                 items-center
@@ -4000,7 +4011,7 @@ the blue gell-coat was VERY sun-damaged (faded), decals bad condition.  They cam
                     <!-- Google Link -->
                     
                     <li>
-                        <a target="_blank" rel="noopener noreferrer" href="//goo.gl/maps/dypnnnds58s4fgrda" class="inline-flex w-full px-5 py-2.5 text-sm font-medium transition border-2 border-transparent rounded-md bg-primary text-primary-foreground focus:outline-none hover:bg-primary-darker focus:ring-2 ring-primary ring-opacity-75 ring-offset-2">Leave a Review</a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://goo.gl/maps/dypnnnds58s4fgrda" class="inline-flex w-full px-5 py-2.5 text-sm font-medium transition border-2 border-transparent rounded-md bg-primary text-primary-foreground focus:outline-none hover:bg-primary-darker focus:ring-2 ring-primary ring-opacity-75 ring-offset-2">Leave a Review</a>
                     </li>
                     
                     <!-- Facebook Link -->
@@ -4008,7 +4019,7 @@ the blue gell-coat was VERY sun-damaged (faded), decals bad condition.  They cam
                     <!-- Yelp Link -->
                     
                     <li>
-                        <a target="_blank" rel="noopener noreferrer" href="//https://facebook.com/Lfinesseautocare/reviews" class="inline-flex w-full px-5 py-2.5 text-sm font-medium transition border-2 border-transparent rounded-md bg-primary text-primary-foreground focus:outline-none hover:bg-primary-darker focus:ring-2 ring-primary ring-opacity-75 ring-offset-2">Leave a Review</a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://facebook.com/Lfinesseautocare/reviews" class="inline-flex w-full px-5 py-2.5 text-sm font-medium transition border-2 border-transparent rounded-md bg-primary text-primary-foreground focus:outline-none hover:bg-primary-darker focus:ring-2 ring-primary ring-opacity-75 ring-offset-2">Leave a Review</a>
                     </li>
                     
                 </ul>
