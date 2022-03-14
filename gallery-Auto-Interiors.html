@@ -428,8 +428,19 @@
                                         <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                                             <div class="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
                                                 <!-- Render each sublink -->
-                                                <!-- <each loop="link in [{&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Auto Interiors&#x27;, &#x27;href&#x27;: &#x27;gallery-Auto-Interiors&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Boat Exteriors&#x27;, &#x27;href&#x27;: &#x27;gallery-Boat-Exteriors&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Auto Exteriors&#x27;, &#x27;href&#x27;: &#x27;gallery-Auto-Exteriors&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Boat Interiors&#x27;, &#x27;href&#x27;: &#x27;gallery-Boat-Interiors&#x27;}, {&#x27;title&#x27;: &#x27;All Photos&#x27;, &#x27;copy&#x27;: &#x27;All Photos&#x27;, &#x27;href&#x27;: &#x27;gallery-All&#x27;}]"> -->
+                                                <!-- <each loop="link in [{&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Auto Exteriors&#x27;, &#x27;href&#x27;: &#x27;gallery-Auto-Exteriors&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Auto Interiors&#x27;, &#x27;href&#x27;: &#x27;gallery-Auto-Interiors&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Boat Exteriors&#x27;, &#x27;href&#x27;: &#x27;gallery-Boat-Exteriors&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Boat Interiors&#x27;, &#x27;href&#x27;: &#x27;gallery-Boat-Interiors&#x27;}, {&#x27;title&#x27;: &#x27;All Photos&#x27;, &#x27;copy&#x27;: &#x27;All Photos&#x27;, &#x27;href&#x27;: &#x27;gallery-All&#x27;}]"> -->
                                                   
+                                                    <a
+                                                        href=" gallery-Auto-Exteriors "
+                                                        role="menuitem"
+                                                        class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
+                                                    >
+                                                        <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
+                                                        <p class="mt-1 text-sm text-gray-500">Auto Exteriors</p>
+                                                    </a>
+                                                <!-- </each> -->
+                                               <!--  -->
+                                                 
                                                     <a
                                                         href=" gallery-Auto-Interiors "
                                                         role="menuitem"
@@ -448,17 +459,6 @@
                                                     >
                                                         <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
                                                         <p class="mt-1 text-sm text-gray-500">Boat Exteriors</p>
-                                                    </a>
-                                                <!-- </each> -->
-                                               <!--  -->
-                                                 
-                                                    <a
-                                                        href=" gallery-Auto-Exteriors "
-                                                        role="menuitem"
-                                                        class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
-                                                    >
-                                                        <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
-                                                        <p class="mt-1 text-sm text-gray-500">Auto Exteriors</p>
                                                     </a>
                                                 <!-- </each> -->
                                                <!--  -->
@@ -749,6 +749,12 @@
                                         <div class="relative grid gap-6 px-5 py-2 bg-white rounded-lg">
                                             <!-- Render each sublink -->
                                             
+                                                <a href="gallery-Auto-Exteriors" role="menuitem" class="block p-3 -m-3 transition rounded-md">
+                                                    <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
+                                                    <p class="mt-1 text-sm text-gray-500">Auto Exteriors</p>
+                                                </a>
+                                            <!-- </each> -->
+                                            
                                                 <a href="gallery-Auto-Interiors" role="menuitem" class="block p-3 -m-3 transition rounded-md">
                                                     <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
                                                     <p class="mt-1 text-sm text-gray-500">Auto Interiors</p>
@@ -758,12 +764,6 @@
                                                 <a href="gallery-Boat-Exteriors" role="menuitem" class="block p-3 -m-3 transition rounded-md">
                                                     <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
                                                     <p class="mt-1 text-sm text-gray-500">Boat Exteriors</p>
-                                                </a>
-                                            <!-- </each> -->
-                                            
-                                                <a href="gallery-Auto-Exteriors" role="menuitem" class="block p-3 -m-3 transition rounded-md">
-                                                    <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
-                                                    <p class="mt-1 text-sm text-gray-500">Auto Exteriors</p>
                                                 </a>
                                             <!-- </each> -->
                                             
@@ -861,6 +861,8 @@
             
                 
                     
+                        
+                            
                         
                             
                                 <!-- Our Best Work Component -->
@@ -1218,8 +1220,6 @@
                         
                             
                         
-                            
-                        
                     
                 
             
@@ -1316,7 +1316,7 @@
                   
                   
                   
-                  <a target="_blank" rel="noopener noreferrer" href="https://goo.gl/maps/dypnnnds58s4fgrda" class="text-gray-100 hover:text-gray-300 focus:outline-none focus:ring-2 ring-white ring-opacity-75">
+                  <a target="_blank" rel="noopener noreferrer" href="https://goo.gl/maps/Ea6uyqLACiUaDa7x8" class="text-gray-100 hover:text-gray-300 focus:outline-none focus:ring-2 ring-white ring-opacity-75">
                       <span class="sr-only">Google</span>
                       <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                           <path d="M20 10.2222C20 9.40001 19.9319 8.80001 19.7846 8.1778H10.2041V11.8889H15.8276C15.7143 12.8111 15.1021 14.2 13.7415 15.1333L13.7224 15.2575L16.7516 17.5573L16.9615 17.5778C18.8889 15.8333 20 13.2667 20 10.2222Z" fill="#9CA3AF"/>
@@ -1677,42 +1677,42 @@
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-149517"
-                                            name="149517"
+                                            id="contact-service-150509"
+                                            name="150509"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-149517" class="ml-3 text-sm font-medium text-gray-700">Paint Correction</label>
+                                        <label for="contact-label-service-150509" class="ml-3 text-sm font-medium text-gray-700">Paint Correction</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-149518"
-                                            name="149518"
+                                            id="contact-service-150510"
+                                            name="150510"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-149518" class="ml-3 text-sm font-medium text-gray-700">Ceramic Coating</label>
+                                        <label for="contact-label-service-150510" class="ml-3 text-sm font-medium text-gray-700">Ceramic Coating</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-149519"
-                                            name="149519"
+                                            id="contact-service-150511"
+                                            name="150511"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-149519" class="ml-3 text-sm font-medium text-gray-700">Auto Detailing</label>
+                                        <label for="contact-label-service-150511" class="ml-3 text-sm font-medium text-gray-700">Auto Detailing</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-149520"
-                                            name="149520"
+                                            id="contact-service-150512"
+                                            name="150512"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-149520" class="ml-3 text-sm font-medium text-gray-700">Boat Detailing</label>
+                                        <label for="contact-label-service-150512" class="ml-3 text-sm font-medium text-gray-700">Boat Detailing</label>
                                     </div>
                                 
                             </div>
@@ -1870,7 +1870,7 @@
                     <!-- Google Link -->
                     
                     <li>
-                        <a target="_blank" rel="noopener noreferrer" href="https://goo.gl/maps/dypnnnds58s4fgrda" class="inline-flex w-full px-5 py-2.5 text-sm font-medium transition border-2 border-transparent rounded-md bg-primary text-primary-foreground focus:outline-none hover:bg-primary-darker focus:ring-2 ring-primary ring-opacity-75 ring-offset-2">Leave a Review</a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://https://goo.gl/maps/Ea6uyqLACiUaDa7x8" class="inline-flex w-full px-5 py-2.5 text-sm font-medium transition border-2 border-transparent rounded-md bg-primary text-primary-foreground focus:outline-none hover:bg-primary-darker focus:ring-2 ring-primary ring-opacity-75 ring-offset-2">Leave a Review</a>
                     </li>
                     
                     <!-- Facebook Link -->
