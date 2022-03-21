@@ -902,7 +902,7 @@
 <div
     x-data="{
         activeImage: 0,
-        amountOfImages: 20,
+        amountOfImages: 25,
         next() {
             if (this.activeImage < this.amountOfImages - 1)
                 this.activeImage ++;
@@ -923,27 +923,6 @@
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 0; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/d0f7f1f7-5293-4d2b-8bb4-77e7af8aa337.png" alt="" /> -->
-                             
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/d0f7f1f7-5293-4d2b-8bb4-77e7af8aa337.png" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/d0f7f1f7-5293-4d2b-8bb4-77e7af8aa337.png" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/d0f7f1f7-5293-4d2b-8bb4-77e7af8aa337.png" alt="" /> -->
-                            
-                        </div>
-
-                        <div class="space-y-1 text-lg font-medium leading-6">
-                            <p class="line-clamp-3"></p>
-                            <h3 class="text-primary"></h3>
-                        </div>
-                    </button>
-                </div>
-            </li>
-        
-            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
-            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
-                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 1; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
-                        <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/d804bdba-f9db-4abe-a565-643c5acb390e.png" alt="" /> -->
                              
                                 <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/d804bdba-f9db-4abe-a565-643c5acb390e.png" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/> 
@@ -963,7 +942,133 @@
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
+                    <button @click="activeImage = 1; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                        <div class="aspect-w-3 aspect-h-2">
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/f37b6662-57c4-4a3f-92cb-d3fb7155a65a.png" alt="" /> -->
+                             
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/f37b6662-57c4-4a3f-92cb-d3fb7155a65a.png" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/f37b6662-57c4-4a3f-92cb-d3fb7155a65a.png" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/f37b6662-57c4-4a3f-92cb-d3fb7155a65a.png" alt="" /> -->
+                            
+                        </div>
+
+                        <div class="space-y-1 text-lg font-medium leading-6">
+                            <p class="line-clamp-3"></p>
+                            <h3 class="text-primary"></h3>
+                        </div>
+                    </button>
+                </div>
+            </li>
+        
+            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
+            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
+                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 2; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                        <div class="aspect-w-3 aspect-h-2">
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/94674aa9-1a4b-4655-8629-ae0f049b54c8.png" alt="" /> -->
+                             
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/94674aa9-1a4b-4655-8629-ae0f049b54c8.png" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/94674aa9-1a4b-4655-8629-ae0f049b54c8.png" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/94674aa9-1a4b-4655-8629-ae0f049b54c8.png" alt="" /> -->
+                            
+                        </div>
+
+                        <div class="space-y-1 text-lg font-medium leading-6">
+                            <p class="line-clamp-3"></p>
+                            <h3 class="text-primary"></h3>
+                        </div>
+                    </button>
+                </div>
+            </li>
+        
+            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
+            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
+                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
+                    <button @click="activeImage = 3; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                        <div class="aspect-w-3 aspect-h-2">
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/d4f151a4-f2fe-4627-846d-bedb9b85c4f4.png" alt="" /> -->
+                             
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/d4f151a4-f2fe-4627-846d-bedb9b85c4f4.png" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/d4f151a4-f2fe-4627-846d-bedb9b85c4f4.png" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/d4f151a4-f2fe-4627-846d-bedb9b85c4f4.png" alt="" /> -->
+                            
+                        </div>
+
+                        <div class="space-y-1 text-lg font-medium leading-6">
+                            <p class="line-clamp-3"></p>
+                            <h3 class="text-primary"></h3>
+                        </div>
+                    </button>
+                </div>
+            </li>
+        
+            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
+            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
+                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
+                    <button @click="activeImage = 4; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                        <div class="aspect-w-3 aspect-h-2">
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/1d13a827-dd3e-44b1-b6f8-4e8b7eaf6ebf.png" alt="" /> -->
+                             
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/1d13a827-dd3e-44b1-b6f8-4e8b7eaf6ebf.png" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/1d13a827-dd3e-44b1-b6f8-4e8b7eaf6ebf.png" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/1d13a827-dd3e-44b1-b6f8-4e8b7eaf6ebf.png" alt="" /> -->
+                            
+                        </div>
+
+                        <div class="space-y-1 text-lg font-medium leading-6">
+                            <p class="line-clamp-3"></p>
+                            <h3 class="text-primary"></h3>
+                        </div>
+                    </button>
+                </div>
+            </li>
+        
+            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
+            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
+                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
+                    <button @click="activeImage = 5; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                        <div class="aspect-w-3 aspect-h-2">
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/d0f7f1f7-5293-4d2b-8bb4-77e7af8aa337.png" alt="" /> -->
+                             
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/d0f7f1f7-5293-4d2b-8bb4-77e7af8aa337.png" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/d0f7f1f7-5293-4d2b-8bb4-77e7af8aa337.png" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/d0f7f1f7-5293-4d2b-8bb4-77e7af8aa337.png" alt="" /> -->
+                            
+                        </div>
+
+                        <div class="space-y-1 text-lg font-medium leading-6">
+                            <p class="line-clamp-3"></p>
+                            <h3 class="text-primary"></h3>
+                        </div>
+                    </button>
+                </div>
+            </li>
+        
+            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
+            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
+                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
+                    <button @click="activeImage = 6; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                        <div class="aspect-w-3 aspect-h-2">
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/1f765696-6a90-41a6-a223-9f874d656fbb.png" alt="" /> -->
+                             
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/1f765696-6a90-41a6-a223-9f874d656fbb.png" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/1f765696-6a90-41a6-a223-9f874d656fbb.png" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/1f765696-6a90-41a6-a223-9f874d656fbb.png" alt="" /> -->
+                            
+                        </div>
+
+                        <div class="space-y-1 text-lg font-medium leading-6">
+                            <p class="line-clamp-3"></p>
+                            <h3 class="text-primary"></h3>
+                        </div>
+                    </button>
+                </div>
+            </li>
+        
+            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
+            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
+                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
+                    <button @click="activeImage = 7; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/fbd14691-9155-48c4-aad5-3adf08dd8958.jpeg" alt="" /> -->
                              
@@ -984,7 +1089,7 @@
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 3; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                    <button @click="activeImage = 8; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/83dc1294-743a-4a0d-9996-b0d686d1421e.jpeg" alt="" /> -->
                              
@@ -1005,7 +1110,7 @@
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 4; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                    <button @click="activeImage = 9; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/fdc48f3e-836a-47d9-9b3f-204232cba955.jpeg" alt="" /> -->
                              
@@ -1026,7 +1131,7 @@
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 5; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                    <button @click="activeImage = 10; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/70c30834-c24f-41b1-9bcc-d1f63d4a8870.jpeg" alt="" /> -->
                              
@@ -1047,7 +1152,7 @@
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 6; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                    <button @click="activeImage = 11; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/8cc42d50-ea08-468d-951a-09929a44f3d2.jpeg" alt="" /> -->
                              
@@ -1068,7 +1173,7 @@
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 7; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                    <button @click="activeImage = 12; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/d0349fe6-12fc-46ff-9896-5ea7345b2ce8.jpeg" alt="" /> -->
                              
@@ -1089,7 +1194,7 @@
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 8; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                    <button @click="activeImage = 13; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/7d5082ad-2dbc-4932-bd88-edf1e830b934.jpeg" alt="" /> -->
                              
@@ -1110,7 +1215,7 @@
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 9; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                    <button @click="activeImage = 14; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/d2608781-98ad-4536-81c3-e2d7af393831.jpeg" alt="" /> -->
                              
@@ -1131,7 +1236,7 @@
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 10; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                    <button @click="activeImage = 15; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/cfeb6e84-2c93-4e18-8fbd-e681b61ec2fb.jpeg" alt="" /> -->
                              
@@ -1152,7 +1257,7 @@
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 11; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                    <button @click="activeImage = 16; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/bcbc898c-c715-4dda-88b9-66968c1ce39f.jpeg" alt="" /> -->
                              
@@ -1173,7 +1278,7 @@
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 12; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                    <button @click="activeImage = 17; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/bc80b0d5-ffa6-4d01-8842-bac897b93173.jpeg" alt="" /> -->
                              
@@ -1194,7 +1299,7 @@
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 13; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                    <button @click="activeImage = 18; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/df759160-781e-4403-b5a1-e08bcd536b9a.jpeg" alt="" /> -->
                              
@@ -1215,7 +1320,7 @@
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 14; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                    <button @click="activeImage = 19; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/4eeb6216-06ab-4861-8639-424ca683a6ff.jpeg" alt="" /> -->
                              
@@ -1236,7 +1341,7 @@
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 15; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                    <button @click="activeImage = 20; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/3c326d5e-410b-475a-95c5-88bc5ce26c86.jpeg" alt="" /> -->
                              
@@ -1257,7 +1362,7 @@
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 16; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                    <button @click="activeImage = 21; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/98392266-f0db-4e3c-9f08-21ec870820a2.jpeg" alt="" /> -->
                              
@@ -1278,7 +1383,7 @@
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 17; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                    <button @click="activeImage = 22; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b3816a8b-7e18-4e86-a273-3c9cc763987f.jpeg" alt="" /> -->
                              
@@ -1299,7 +1404,7 @@
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 18; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                    <button @click="activeImage = 23; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/627216dd-bfc3-4481-ab35-e2a712948376.jpeg" alt="" /> -->
                              
@@ -1320,7 +1425,7 @@
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 19; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                    <button @click="activeImage = 24; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/52f554c5-f75a-450f-9a1c-f5a6e066c300.jpeg" alt="" /> -->
                              
@@ -1389,7 +1494,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 0">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/d0f7f1f7-5293-4d2b-8bb4-77e7af8aa337.png" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/d804bdba-f9db-4abe-a565-643c5acb390e.png" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1397,7 +1502,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 1">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/d804bdba-f9db-4abe-a565-643c5acb390e.png" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/f37b6662-57c4-4a3f-92cb-d3fb7155a65a.png" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1405,7 +1510,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 2">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/fbd14691-9155-48c4-aad5-3adf08dd8958.jpeg" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/94674aa9-1a4b-4655-8629-ae0f049b54c8.png" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1413,7 +1518,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 3">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/83dc1294-743a-4a0d-9996-b0d686d1421e.jpeg" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/d4f151a4-f2fe-4627-846d-bedb9b85c4f4.png" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1421,7 +1526,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 4">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/fdc48f3e-836a-47d9-9b3f-204232cba955.jpeg" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/1d13a827-dd3e-44b1-b6f8-4e8b7eaf6ebf.png" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1429,7 +1534,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 5">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/70c30834-c24f-41b1-9bcc-d1f63d4a8870.jpeg" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/d0f7f1f7-5293-4d2b-8bb4-77e7af8aa337.png" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1437,7 +1542,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 6">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/8cc42d50-ea08-468d-951a-09929a44f3d2.jpeg" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/1f765696-6a90-41a6-a223-9f874d656fbb.png" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1445,7 +1550,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 7">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/d0349fe6-12fc-46ff-9896-5ea7345b2ce8.jpeg" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/fbd14691-9155-48c4-aad5-3adf08dd8958.jpeg" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1453,7 +1558,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 8">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/7d5082ad-2dbc-4932-bd88-edf1e830b934.jpeg" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/83dc1294-743a-4a0d-9996-b0d686d1421e.jpeg" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1461,7 +1566,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 9">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/d2608781-98ad-4536-81c3-e2d7af393831.jpeg" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/fdc48f3e-836a-47d9-9b3f-204232cba955.jpeg" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1469,7 +1574,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 10">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/cfeb6e84-2c93-4e18-8fbd-e681b61ec2fb.jpeg" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/70c30834-c24f-41b1-9bcc-d1f63d4a8870.jpeg" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1477,7 +1582,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 11">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/bcbc898c-c715-4dda-88b9-66968c1ce39f.jpeg" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/8cc42d50-ea08-468d-951a-09929a44f3d2.jpeg" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1485,7 +1590,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 12">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/bc80b0d5-ffa6-4d01-8842-bac897b93173.jpeg" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/d0349fe6-12fc-46ff-9896-5ea7345b2ce8.jpeg" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1493,7 +1598,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 13">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/df759160-781e-4403-b5a1-e08bcd536b9a.jpeg" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/7d5082ad-2dbc-4932-bd88-edf1e830b934.jpeg" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1501,7 +1606,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 14">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/4eeb6216-06ab-4861-8639-424ca683a6ff.jpeg" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/d2608781-98ad-4536-81c3-e2d7af393831.jpeg" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1509,7 +1614,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 15">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/3c326d5e-410b-475a-95c5-88bc5ce26c86.jpeg" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/cfeb6e84-2c93-4e18-8fbd-e681b61ec2fb.jpeg" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1517,7 +1622,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 16">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/98392266-f0db-4e3c-9f08-21ec870820a2.jpeg" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/bcbc898c-c715-4dda-88b9-66968c1ce39f.jpeg" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1525,7 +1630,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 17">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b3816a8b-7e18-4e86-a273-3c9cc763987f.jpeg" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/bc80b0d5-ffa6-4d01-8842-bac897b93173.jpeg" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1533,13 +1638,53 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 18">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/627216dd-bfc3-4481-ab35-e2a712948376.jpeg" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/df759160-781e-4403-b5a1-e08bcd536b9a.jpeg" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
                                 
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 19">
+                                            
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/4eeb6216-06ab-4861-8639-424ca683a6ff.jpeg" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/>
+                                            <p lorem="1" class="mt-3 text-gray-500"></p>
+                                        
+                                    </li>
+                                
+                                    <!-- Transition Wrapper 1 -->
+                                    <li class="flex flex-col" x-show="activeImage === 20">
+                                            
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/3c326d5e-410b-475a-95c5-88bc5ce26c86.jpeg" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/>
+                                            <p lorem="1" class="mt-3 text-gray-500"></p>
+                                        
+                                    </li>
+                                
+                                    <!-- Transition Wrapper 1 -->
+                                    <li class="flex flex-col" x-show="activeImage === 21">
+                                            
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/98392266-f0db-4e3c-9f08-21ec870820a2.jpeg" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/>
+                                            <p lorem="1" class="mt-3 text-gray-500"></p>
+                                        
+                                    </li>
+                                
+                                    <!-- Transition Wrapper 1 -->
+                                    <li class="flex flex-col" x-show="activeImage === 22">
+                                            
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b3816a8b-7e18-4e86-a273-3c9cc763987f.jpeg" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/>
+                                            <p lorem="1" class="mt-3 text-gray-500"></p>
+                                        
+                                    </li>
+                                
+                                    <!-- Transition Wrapper 1 -->
+                                    <li class="flex flex-col" x-show="activeImage === 23">
+                                            
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/627216dd-bfc3-4481-ab35-e2a712948376.jpeg" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/>
+                                            <p lorem="1" class="mt-3 text-gray-500"></p>
+                                        
+                                    </li>
+                                
+                                    <!-- Transition Wrapper 1 -->
+                                    <li class="flex flex-col" x-show="activeImage === 24">
                                             
                                             <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/52f554c5-f75a-450f-9a1c-f5a6e066c300.jpeg" alt="Boat Interiors for L&#x27;Finesse Auto/Boat Details in Dallas, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
